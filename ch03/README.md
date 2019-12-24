@@ -47,4 +47,19 @@ print("the time is unlimited? : \(isTimeUnlimited)")
 
 부동소수점을 사용하는 실수이며 부동소수타입이라고 함. 흔히 우리가 말하는 소수점 자리가 있는 수.
 
-부동소수타입은 정수타입보다 훨씬 
+부동소수타입은 정수타입보다 훨씬 넓은 범위의 수를 표현할 수 있음.
+
+스위프트에서는 64비트의 부동소수를 표현하는 더블과 32비트의 부동소수를 표현하는 플롯이 있음.
+
+<h3>표현</h3>
+
+```swift
+var floatValue : Float = 1234567890.1
+let doubleValue : Double = 1234567890.1
+
+print("floatValue : \(floatValue), DoubleValue : \(doubleValue)")
+
+floatValue = 123456.1
+
+print(floatValue)
+```
