@@ -5,7 +5,7 @@
 최댓값과 최솟값은 각각 max, min프로퍼티로 알아 볼 수 있음. 각각 8비트, 16비트, 32비트, 64비트의 형태가 있음 ex)Int8, UInt32...
 
 <h3>표현</h3>
-
+```swift
 var integer : Int = -100
 let unsignedInteger : UInt = 50 //UInt타입에는 음수값 할당 불가
 print("value of integer : \(integer), value of unsignedInteger : \(unsignedInteger)")
@@ -27,3 +27,7 @@ let decimalInteger : Int = 28
 let binaryInteger : Int = 0b11100
 let octalInteger : Int = 0o34
 let hexadecimalInteger : Int = 0x1C
+```
+
+<h3>Bool</h3>
+Bool은 불리언타입. 불리언타입은 참 또는 거짓만을 값으로 가짐.
