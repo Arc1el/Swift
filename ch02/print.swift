@@ -23,3 +23,8 @@ dump(hyeonminInfo)
 
 print(hyeonmin)
 dump(hyeonmin)
+
+//문자열보간법
+let name : String = "hyeonmin"
+var score : Int = 80
+print("My name is \(score)")
