@@ -42,3 +42,9 @@ let isTimeUnlimited : Bool = false
 
 print("the time is unlimited? : \(isTimeUnlimited)")
 ```
+
+<h3>Float과 Double</h3>
+
+부동소수점을 사용하는 실수이며 부동소수타입이라고 함. 흔히 우리가 말하는 소수점 자리가 있는 수.
+
+부동소수타입은 정수타입보다 훨씬 
