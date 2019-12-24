@@ -30,4 +30,14 @@ let hexadecimalInteger : Int = 0x1C
 ```
 
 <h3>Bool</h3>
+
 Bool은 불리언타입. 불리언타입은 참 또는 거짓만을 값으로 가짐.
+
+```swift
+var boolean : Bool = true
+boolean.toggle() //invert true-false
+let iLoveYou : Bool = true
+let isTimeUnlimited : Bool = false
+
+print("the time is unlimited? : \(isTimeUnlimited)")
+```
