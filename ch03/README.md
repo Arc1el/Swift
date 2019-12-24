@@ -5,6 +5,7 @@
 최댓값과 최솟값은 각각 max, min프로퍼티로 알아 볼 수 있음. 각각 8비트, 16비트, 32비트, 64비트의 형태가 있음 ex)Int8, UInt32...
 
 <h3>표현</h3>
+
 ```swift
 var integer : Int = -100
 let unsignedInteger : UInt = 50 //UInt타입에는 음수값 할당 불가
