@@ -41,3 +41,39 @@ let percentage : MyDouble = 99.9
 <h3>튜플</h3>
 
 타입의 이름이 따로 지정되어있지 않은, 프로그래머 마음대로 만드는 타입. 지정된 데이터의 묶음이라고 표현할 수 있음
+
+튜플은 파이썬의 튜플과 유사하며 따로 이름이 없으므로 일정타입의 나열만으로도 튜플타입을 생성해 줄 수 있음.
+
+튜플에 포함될 데이터의 갯수는 자유롭게 정할 수 있음.
+
+```swift
+var person : (String, Int, Double) = ("hyeonmin", 100, 178.9)
+
+print("이름 : \(person.0), 나이 : \(person.1), 신장 : \(person.2)")
+
+person.1 = 99
+person.2 = 180
+
+print("이름 : \(person.0), 나이 : \(person.1), 신장 : \(person.2)")
+
+var personIndex : (name : String, age : Int, height : Double) = ("hyeonmin", 100, 178.9)
+
+personIndex.age = 99
+personIndex.height = 179
+
+print("이름 : \(personIndex.0), 나이 : \(personIndex.1), 신장 : \(personIndex.2)")
+
+typealias PersonTuple = (name : String, age : Int, height : Double)
+
+let hyeonmin : PersonTuple = ("hyeonmin", 100, 179)
+let eric : PersonTuple = ("eric", 150, 183.9)
+
+print("이름 : \(hyeonmin.name), 나이 : \(hyeonmin.age), 신장 : \(hyeonmin.height)")
+print("이름 : \(eric.name), 나이 : \(eric.age), 신장 : \(eric.height)")
+```
+
+<h3>컬렉션형</h3> 
+
+스위프트는 튜플 외에도 많은 수의 데이터를 묶어서 저장하고 관리할 수 있는 컬렉션타입을 제공함.
+
+배열, 딕셔너리, 세트 등이 있음.
