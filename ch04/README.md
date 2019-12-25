@@ -38,4 +38,6 @@ let month : Int = 7 //기존 Int도 사용가능
 let percentage : MyDouble = 99.9
 ```
 
-<h3></h3>
+<h3>튜플</h3>
+
+타입의 이름이 따로 지정되어있지 않은, 프로그래머 마음대로 
