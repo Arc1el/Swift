@@ -63,3 +63,22 @@ floatValue = 123456.1
 
 print(floatValue)
 ```
+
+<h3>Character</h3>
+
+문자를 의미. 단어, 문장처럼 문자의 집합이 아닌 단하나의 문자. 문자를 표현하기 위해서는 값의 앞뒤에 큰따옴표를 사용하여 표현.
+
+<h3>표현</h3>
+
+```swift
+let alphabetA : Character = "A"
+print(alphabetA)
+
+let commandCharacter : Character = "😅"
+print(commandCharacter)
+
+let 한글변수이름 : Character = "ㄱ"
+print("한글의 첫자음 : \(한글변수이름)")
+```
+
+<h3></h3>
