@@ -4,8 +4,6 @@
 
 최댓값과 최솟값은 각각 max, min프로퍼티로 알아 볼 수 있음. 각각 8비트, 16비트, 32비트, 64비트의 형태가 있음 ex)Int8, UInt32...
 
-<h3>표현</h3>
-
 ```swift
 var integer : Int = -100
 let unsignedInteger : UInt = 50 //UInt타입에는 음수값 할당 불가
@@ -51,8 +49,6 @@ print("the time is unlimited? : \(isTimeUnlimited)")
 
 스위프트에서는 64비트의 부동소수를 표현하는 더블과 32비트의 부동소수를 표현하는 플롯이 있음.
 
-<h3>표현</h3>
-
 ```swift
 var floatValue : Float = 1234567890.1
 let doubleValue : Double = 1234567890.1
@@ -67,8 +63,6 @@ print(floatValue)
 <h3>Character</h3>
 
 문자를 의미. 단어, 문장처럼 문자의 집합이 아닌 단하나의 문자. 문자를 표현하기 위해서는 값의 앞뒤에 큰따옴표를 사용하여 표현.
-
-<h3>표현</h3>
 
 ```swift
 let alphabetA : Character = "A"
