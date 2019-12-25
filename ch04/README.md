@@ -74,6 +74,45 @@ print("이름 : \(eric.name), 나이 : \(eric.age), 신장 : \(eric.height)")
 
 <h3>컬렉션형</h3> 
 
-스위프트는 튜플 외에도 많은 수의 데이터를 묶어서 저장하고 관리할 수 있는 컬렉션타입을 제공함.
+스위프트는 튜플 외에도 많은 수의 데이터를 묶어서 저장하고 관리할 수 있는 컬렉션타입을 제공함. 배열, 딕셔너리, 세트 등이 있음.
 
-배열, 딕셔너리, 세트 등이 있음.
+<h2>배열</h2>
+
+같은 타입의 데이터를 일렬로 나열한 후 순서대로 저장하는 형태의 컬렉션 타입. 각기 다른위치에 같은값이 들어갈 수 있음.
+
+let키워드를 사용해 상수로 선언하면 변경할 수 없는 배열이 되고 var의 경우도 변수와 같이 선언됨.
+
+실제로 배열을 사용할때에는 Array라는 키워드와 타입의 조합으로 사용함.
+
+배열에 몇개의 요소가 존재하는지 알고싶으면 count프로퍼티를 확인하면 알 수 있음.
+
+```swift
+var names : Array<String> = ["hyeonmin", "yagom", "chulsoo", "younghee"]
+var sameNames : [String] = ["hyeonmin", "yagom", "chulsoo", "younghee"]
+//두개의 배열은 선언과 정확히 동일한 표현임 아래의 [String]이 축약표현
+
+var emptyArray : [Any] = [Any]()
+var emptyArray2nd : [Any] = Array<Any>()
+//이 두개 또한 동일한 표현
+
+var emptyArray3rd : [Any] = [] //배열의 타입을 정확히 명시하는경우 []만으로도 빈배열 생성 가능
+
+print(emptyArray.isEmpty)
+print(names.count)
+
+print(names[2])
+names[2] = "jenny"
+print(names[2])
+print(names[4])
+
+names[4] = "elsa"
+names.append("elsa")
+names.append(contentsOf : ["john", "max"])
+names.insert("happy", at : 2)
+names.insert(contentsOf : ["Jinhee", "minsoo"], at : 5)
+
+print(names[4])
+print(names.first)
+
+
+```
