@@ -154,3 +154,50 @@ print(numberForName.removeValue(forKey: "hyeonmin"))
 
 print(numberForName["hyeonmin", default : 0])
 ```
+
+<h3>세트</h3>
+
+같은 타입의 데이터를 순서없이 하나의 묶음으로 지정하는 형태의 컬렉션타입. 세트내의 값은 모두 유일한, 중복된 값이 존재하지 않음.
+
+세트는 보통 순서가 중요하지 않거나 각 요소가 유일한 값이어야 하는 경우에 사용. 요소로 해시가능한 값이 들어와야함.
+
+배열과 달리 줄여서 표현할 수 있는 축약형이 없음.
+
+```swift
+var names : Set<String> = Set<String>()
+var names2nd : Set<String> = []
+//두개 다 동일한 빈 세트를 생성하는 코드
+
+var names3rd : Set<String> = ["hyeonmin", "chulsoo", "hyeri", "solbin"]
+
+var numbers = [100, 200, 300]
+print(type(of : numbers))
+
+print(names.isEmpty)
+print(names.count)
+
+names.insert("jenny")
+print(names.count)
+
+print(names.remove("chulsoo"))
+print(names.remove("john"))
+
+let englishClassStudents : Set<String> = ["john", "chulsoo", "hyeonmin"]
+let koreanClassStudents : Set<String> = ["jenny", "hyeonmin", "chulsoo", "hana", "minsoo"]
+
+let intersectSet : Set<String> = englishClassStudents.intersection(koreanClassStudents)
+let symmetricDiffSet : Set<String> = englishClassStudents.symmetricDifference(koreanClassStudents)
+let unionSet : Set<String> = englishClassStudents.union(koreanClassStudents)
+let subtractSet : Set<String> = englishClassStudents.subtracting(koreanClassStudents)
+
+print(unionSet.sorted())
+
+let bird : Set<String> = ["pigeon", "chicken", "crow"]
+let mammal : Set<String> = ["lion", "tiger", "bear"]
+let animal : Set<String> = bird.union(mammal)
+
+print(bird.isDisjoint(with: mammal))
+print(bird.isSubset(of: animal))
+print(animal.isSuperset(of: mammal))
+print(animal.isSuperset(of: bird))
+```
