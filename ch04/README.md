@@ -124,3 +124,33 @@ names.insert(contentsOf : ["Jinhee", "minsoo"], at : 5)
 print(names[4])
 print(names.first)
 ```
+
+<h3>딕셔너리</h3>
+요소들이 순서없이 키와 값의 쌍으로 구성되는 컬렉션타입. 키가 하나이거나 여러개일 수 있음.
+
+```swift
+typealias StringintDictionary = [String : Int]
+//var numberForName : Dictionary<String, Int> = Dictionary<String, Int>()
+var numberForName2nd : [String : Int] = [String : Int]()
+var numberForName3rd : StringintDictionary = StringintDictionary()
+var numberForName4nd : [String : Int] = [:]
+
+var numberForName : [String : Int] = ["hyeonmin" : 100, "chulsoo" : 30, "jenny" : 20]
+
+print(numberForName.isEmpty)
+print(numberForName.count)
+
+print(numberForName["chulsoo"])
+print(numberForName["minji"])
+
+numberForName["chulsoo"] = 150
+print(numberForName["chulsoo"])
+
+numberForName["max"] = 999
+print(numberForName["max"])
+
+print(numberForName.removeValue(forKey: "hyeonmin"))
+print(numberForName.removeValue(forKey: "hyeonmin"))
+
+print(numberForName["hyeonmin", default : 0])
+```
