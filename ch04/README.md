@@ -86,6 +86,16 @@ let키워드를 사용해 상수로 선언하면 변경할 수 없는 배열이 
 
 배열에 몇개의 요소가 존재하는지 알고싶으면 count프로퍼티를 확인하면 알 수 있음.
 
+맨 처음과 맨 마지막 요소는 first와 프로퍼티를 통해서 가져올 수 잇음. 
+
+index(of : )메서드를 사용하면 해당 요소의 인덱스를 알아낼 수 있음.
+
+insert(of : )메서드를 사용하여 맨 뒤에 요소를 추가 할 수 있음.
+
+at(of : )메서드를 사용하면 중간에 요소를 추가할수 있음.
+
+요소를 삭제하려면 remove(of : )메서드를 사용하게 되는데, 요소가 삭제된 후 반환됨.
+
 ```swift
 var names : Array<String> = ["hyeonmin", "yagom", "chulsoo", "younghee"]
 var sameNames : [String] = ["hyeonmin", "yagom", "chulsoo", "younghee"]
@@ -113,6 +123,4 @@ names.insert(contentsOf : ["Jinhee", "minsoo"], at : 5)
 
 print(names[4])
 print(names.first)
-
-
 ```
