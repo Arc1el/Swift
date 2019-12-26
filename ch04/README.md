@@ -338,3 +338,13 @@ enum SchoolAdvance : String, CaseIterable
 let allCases2nd : [SchoolAdvance] = SchoolAdvance.allCases
 print(allCases2nd)
 ```
+
+<h3>순환열거형</h3>
+
+열거형 항목의 연관값이 열거형 자신의 값이고자 할때 사용. 순환열거형을 명시하고 싶다면 indirect키워드를 사용.
+
+특정 항목에만 한정하고 싶다면 case키워드 앞에 indirect를 붙이면 되며, 전체에 적용하려면 enum키워드 앞에 붙이면됨.
+
+```swift
+
+```
