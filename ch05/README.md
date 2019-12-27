@@ -95,4 +95,4 @@ resultValue = stringB.isEmpty ? 1.0 : 0.0
 |:---:|:---:|:---:|
 |NOT|!A|참, 거짓을 반전|
 |AND|A && B|AND논리 연산을 실행|
-|OR|A || B|OR논리 연산을 실행|
+|OR|A ""||"" B|OR논리 연산을 실행|
