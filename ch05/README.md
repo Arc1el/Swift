@@ -40,3 +40,20 @@
 |참조가 같다|A === B|A와 B가 참조타입일때 A와 B가 같은 인스턴스를 가리키는지 비교하여 불리언 값을 반환|
 |참조가 같지 않다|A !== B|A와 B가 참조타입일때 A와 B가 같지 않은 인스턴스를 가리키는지 비교하여 불리언 값을 반환|
 |패턴매치|A ~= B|A와 B의 패턴이 매치되는지 확인하여 불리언 값을 반환|
+
+```swift
+let valueA : Int = 3
+let valueB : Int = 5
+let valueC : Int = 5
+
+let isSameValueAB : Bool = valueA == valueB
+let isSameValueBC : Bool = valueB == valueC
+
+let referenceA : SomeClass = SomeClass()
+let referenceB : SomeClass = SomeClass()
+let referenceC : SomeClass = referenceA
+
+let isSameReferenceAB : Bool = referenceA === referenceB
+let isSameReferenceBC : Bool = referenceB === referenceC
+```
+
