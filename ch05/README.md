@@ -93,6 +93,6 @@ resultValue = stringB.isEmpty ? 1.0 : 0.0
 
 |연산자|부호|설명|
 |:---:|:---:|:---:|
-|NOT|!A|
-|AND|A && B|
-|OR|A "||" B|
+|NOT|!A|참, 거짓을 반전|
+|AND|A && B|AND논리 연산을 실행|
+|OR|A || B|OR논리 연산을 실행|
